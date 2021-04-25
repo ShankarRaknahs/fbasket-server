@@ -1,0 +1,24 @@
+{
+  "name": "fbasket-server",
+  "version": "1.0.0",
+  "description": "An ecommerce admin server to handle the orders with respect to the customers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShankarRaknahs/fbasket-server.git"
+  },
+  "author": "Shankar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShankarRaknahs/fbasket-server/issues"
+  },
+  "homepage": "https://github.com/ShankarRaknahs/fbasket-server#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
