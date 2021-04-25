@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
 const conf = require("../../config/app.config");
+require("dotenv").config();
 
 const connectDB = async (env) => {
   try {
-    const conn = await mongoose.connect(conf[env].mongodb_url, {
+    const conn = await mongoose.connect(process.env.MONGODB_URL, {
       useUnifiedTopology: true,
       useNewUrlParser: true,
       useCreateIndex: true,
