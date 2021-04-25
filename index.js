@@ -3,6 +3,13 @@ const app = express();
 const data = require("./temp.json");
 const cors = require("cors");
 
+var port = process.env.PORT || 4000;
+
+app.set("view engine", "ejs");
+app.get("/", function (req, res) {
+  res.render("index");
+});
+
 const whitelist = [
   "http://127.0.0.1:3000",
   "http://localhost:3000",
@@ -28,4 +35,6 @@ app.get("/v1/orders", function (req, res) {
   res.send(JSON.stringify(data));
 });
 
-app.listen(4000);
+app.listen(port, () => {
+  console.log("Fbasket server is running on " + port);
+});
