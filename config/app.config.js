@@ -3,8 +3,7 @@
 var conf = {
   dev: {
     server_port: 4000,
-    mongodb_url:
-      "mongodb+srv://admin:admin@cluster0.cnc1p.mongodb.net/fbasket?retryWrites=true&w=majority",
+    mongodb_url: "",
   },
 
   prod: {
