@@ -6,5 +6,31 @@
 </head>
 <body>
 	<h1>Fbasket server deployed in Heruko</h1>
+
+	<h2>GET Customers</h2>
+	<p>sample url - http://localhost:4000/v1/customers/12345	</p>
+
+	<h2>GET Products</h2>
+	<p> sample url - http://localhost:4000/v1/products</p>
+
+	<h2>GET Orders</h2>
+	<p>sample url - http://localhost:4000/v1/orders</p>
+
+	<h1>PATCH Order</h1>
+	<p>sample url - http://localhost:4000/v1/orders/1001</p>
+	<P> Req.body   {status: "Done"} </P> 
+	
+	<h1>POST products</h1>
+	<p>sample url - http://localhost:4000/v1/products/46123425</p>
+	<p>Req.body </p>
+	<p>
+		{
+			"product_id": "46123425",
+			"name": "Ipad Test Pro",
+			"quantity": "3",
+			"price": "100"
+		}
+	</p>
+
 </body>
 </html>
