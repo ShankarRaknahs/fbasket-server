@@ -12,4 +12,11 @@ router
   .route("/:productId")
   .post(validate(productValidation.postProduct), productController.postProduct);
 
+router
+  .route("/sold")
+  .get(
+    validate(productValidation.getSoldProducts),
+    productController.getSoldProducts
+  );
+
 module.exports = router;

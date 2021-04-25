@@ -9,8 +9,7 @@ var conf = {
 
   prod: {
     server_port: 80,
-    mongodb_url:
-      "mongodb+srv://admin:admin@cluster0.cnc1p.mongodb.net/fbasket?retryWrites=true&w=majority",
+    mongodb_url: "",
   },
 };
 
