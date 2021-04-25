@@ -9,4 +9,10 @@ const getOrders = {
   }),
 };
 
-module.exports = { getOrders };
+const patchOrder = {
+  query: Joi.object().keys({
+    orderId: Joi.number(),
+  }),
+};
+
+module.exports = { getOrders, patchOrder };

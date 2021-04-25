@@ -7,6 +7,12 @@ const getProducts = catchAsync(async (req, res) => {
   res.send(result);
 });
 
+const postProduct = catchAsync(async (req, res) => {
+  const result = await productService.post(req.params.productId, req.body);
+  res.send(result);
+});
+
 module.exports = {
   getProducts,
+  postProduct,
 };

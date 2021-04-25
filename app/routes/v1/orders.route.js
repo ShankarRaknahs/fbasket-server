@@ -8,4 +8,8 @@ router
   .route("/")
   .get(validate(ordersValidation.getOrders), ordersController.getOrders);
 
+router
+  .route("/:orderId")
+  .patch(validate(ordersValidation.patchOrder), ordersController.patchOrder);
+
 module.exports = router;
