@@ -17,4 +17,12 @@ const postProduct = {
   }),
 };
 
-module.exports = { getProducts, postProduct };
+const getSoldProducts = {
+  query: Joi.object().keys({
+    product_id: Joi.number(),
+    name: Joi.string(),
+    quantity: Joi.number(),
+  }),
+};
+
+module.exports = { getProducts, postProduct, getSoldProducts };
